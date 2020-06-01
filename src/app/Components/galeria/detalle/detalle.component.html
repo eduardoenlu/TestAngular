@@ -1,0 +1,24 @@
+<mat-card class="dark">
+    <mat-card-header style="justify-content: space-between;" class="bg-success text-white">
+      <mat-card-title>
+        {{articulo.strDescripcion}}
+      </mat-card-title>
+      <button (click)="onNoClick()" mat-button>
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="messages-list" fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
+        <div class="align-items-center m-b-30 text-center">
+          <div class="avatar-detail" style="margin-left: auto;">
+            <img alt="" class="rounded-circle" style="border-radius: 100%; width: 200px;"
+              src="assets/images/big/img.jpg" /> </div>
+          <div style="margin-right: auto;">
+            <div class="font-medium">Clave: {{articulo.strClave}}</div>
+            <div class="font-medium">Precio de venta: ${{articulo.dblPrecioVenta}}</div>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  

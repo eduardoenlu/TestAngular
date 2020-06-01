@@ -1,0 +1,11 @@
+<div class="card" style="background-color: grey;">
+<div class="card-body">
+    <div fxLayout="row wrap" fxLayoutAlign="space-around center">
+      <app-card *ngFor="let articulo of arrPageOfItems" [card]=articulo (click)="gotoDetalle(articulo)"></app-card>
+    </div>
+  </div>
+  <div style="justify-content: center;" class="card-footer pb-0 pt-3">
+    <app-cardpaginator [items]="arrArticulos" (changePage)="onChangePage($event)" 
+      [initialPage]="intPageInit" [pageSize]=12></app-cardpaginator>
+  </div>
+</div>

@@ -1,0 +1,93 @@
+@media all and (max-width: 750px) {
+    /* CSS rules here for screens lower than 750px */
+    .mat-card-title{
+        max-width: 70vw; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;
+    }
+
+    .card{
+        max-width: 100vw;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+        margin: 10px 20px;
+        .info{
+            color: rgb(255, 255, 255);
+            font-size: 40px;
+        }
+        &.plus-card{
+            cursor: pointer;
+            transition: .5s;
+            &:hover{
+                transform: scale(1.03);
+            }
+            .plus{
+                font-size: 100px;
+                color: rgb(255, 255, 255);
+            }
+        }
+        .cross{
+            position: absolute;
+            top:10px;
+            right: 10px;
+            font-size:30px;
+            border: none;
+            background: none;
+            color: rgb(255, 255, 255);
+            transition: .5s;
+            &:focus{
+                outline: none;
+            }
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.2);
+            }
+        }
+    }
+    }
+@media all and (min-width: 750px) {
+    /* CSS rules here for screens above 750px */
+   
+    .mat-card-title{
+        max-width: 13vw; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;
+    }
+
+    .card{
+        max-width: 18vw;
+        min-width: 18vw;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+        margin: 10px 20px;
+        .info{
+            color: rgb(255, 255, 255);
+            font-size: 40px;
+        }
+        &.plus-card{
+            cursor: pointer;
+            transition: .5s;
+            &:hover{
+                transform: scale(1.03);
+            }
+            .plus{
+                font-size: 100px;
+                color: rgb(255, 255, 255);
+            }
+        }
+        .cross{
+            position: absolute;
+            top:10px;
+            right: 10px;
+            font-size:30px;
+            border: none;
+            background: none;
+            color: rgb(255, 255, 255);
+            transition: .5s;
+            &:focus{
+                outline: none;
+            }
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.2);
+            }
+        }
+    }
+    
+}

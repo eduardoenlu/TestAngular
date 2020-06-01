@@ -1,0 +1,23 @@
+<div fxFlex.gt-sm="100%" fxFlex.gt-md="100%"  fxFlex.gt-lg="100%" fxFlex="100" @plusAnimation>
+    <mat-card class=" card plus-card ">
+        <mat-card-header>
+            <div mat-card-avatar>
+                <img src="assets/images/big/{{card.strImgSrc}}" class="img-fluid img-circle" />
+            </div>
+            <mat-card-title [matTooltipShowDelay]="500" matTooltipClass="tooltip" matTooltipPosition="above"
+                matTooltip="{{card.strDescripcion}}">
+                <!-- style="max-width: 13vw; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"> -->
+                {{card.strDescripcion[0].toUpperCase() +card.strDescripcion.slice(1,card.strDescripcion.length).toLocaleLowerCase() }}
+            </mat-card-title>
+            <mat-card-subtitle>{{card.strClave}}</mat-card-subtitle>
+
+
+        </mat-card-header>
+        <mat-card-content style="text-align: center;">
+            <img mat-card-image src="assets/images/big/{{card.strImgSrc}}" [matTooltipShowDelay]="1000"
+                matTooltipClass="tooltip" matTooltip="{{card.strDescripcion}}" matTooltipPosition="right">
+            <p *ngFor="let str of card.strExtraInfo" class="card-text">{{str}}</p>
+            <div></div>
+        </mat-card-content>
+    </mat-card>
+</div>
